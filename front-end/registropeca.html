@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Peças</title>
+    <link rel="stylesheet" href="Css/registropecas/registro.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Cadastro de Peças</h1>
+        <form action="index.html" method="get">
+            <label for="nomePeca">Nome da Peça</label>
+            <input type="text" id="nomePeca" name="nomePeca" required />
+
+            <label for="tamanhoPeca">Tamanho da Peça</label>
+            <select id="tamanhoPeca" name="tamanhoPeca" required>
+        <option value="">Selecione</option>
+        <option value="BBLP">BBLP</option>
+        <option value="BBLM">BBLM</option>
+        <option value="BBLG">BBLG</option>
+        <option value="P">P</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+      </select>
+
+            <label for="precoPeca">Preço (R$)</label>
+            <input type="number" id="precoPeca" name="precoPeca" step="0.01" required />
+
+            <label for="quantidadePeca">Quantidade</label>
+            <input type="number" id="quantidadePeca" name="quantidadePeca" required />
+
+            <label for="tipoRoupa">Tipo da Roupa</label>
+            <select id="tipoRoupa" name="tipoRoupa" required>
+        <option value="">Selecione</option>
+        <option value="Blusa">Blusa</option>
+        <option value="Camisa">Camisa</option>
+        <option value="Camiseta">Camiseta</option>
+        <option value="Short">Short</option>
+        <option value="Calça">Calça</option>
+        <option value="Peça Íntima">Peça Íntima</option>
+        <option value="Outro">Outro</option>
+      </select>
+
+            <button type="submit">Cadastrar Peça</button>
+        </form>
+    </div>
+</body>
+
+</html>
